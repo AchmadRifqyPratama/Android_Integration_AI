@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HalamanRincianPemesanan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:text="Rincian Pemesanan Tempat"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                style="@style/FormatText.Judul"
+                android:text="Nama Pemesan"/>
+            <TextView
+                style="@style/FormatText.Isi"
+                android:text=":  Pengunjung 1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                style="@style/FormatText.Judul"
+                android:text="Tanggal"/>
+            <TextView
+                style="@style/FormatText.Isi"
+                android:text=":  30 Juli 2020"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                style="@style/FormatText.Judul"
+                android:text="Jam Datang"/>
+            <TextView
+                style="@style/FormatText.Isi"
+                android:text=":  13.00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                style="@style/FormatText.Judul"
+                android:text="Jam Selesai"/>
+            <TextView
+                style="@style/FormatText.Isi"
+                android:text=":  16.00"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                style="@style/FormatText.Judul"
+                android:text="Jumlah Pengunjung"/>
+            <TextView
+                style="@style/FormatText.Isi"
+                android:text=":  5 Pengunjung"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <TextView
+                style="@style/FormatText.Judul"
+                android:text="Data pengunjung"/>
+            <TextView
+                style="@style/FormatText.Isi"
+                android:text=":  data_kesehatan.pdf"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/pl_rp_terimapesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Terima Pesanan  "
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectangle_primary_color"/>
+            <Button
+                android:id="@+id/pl_rp_tolakpesanan"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_primary_color"
+                android:text="  Tolak Pesanan   "/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
