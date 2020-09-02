@@ -1,0 +1,2 @@
+rootProject.name='AppPengelola'
+include ':app'
