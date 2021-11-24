@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ManualRegistration">
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_marginLeft="-10dp"-->
+        <!--            android:background="@drawable/rectangle_white">-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="   Saldo Anda :   "-->
+        <!--                android:textColor="#FFF"-->
+        <!--                android:textStyle="italic"-->
+        <!--                android:textSize="20sp" />-->
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="40 coins  "-->
+        <!--                android:layout_marginLeft="80dp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:textColor="#FFF"/>-->
+
+        <!--        </LinearLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:text="Pemesanan Tempat"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regismanual_nama"
+                android:hint="Nama Lengkap"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regismanual_umur"
+                android:hint="Umur"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FormatText.Judul"
+                    android:text="Tanggal" />
+
+                <TextView
+                    style="@style/FormatText.Isi"
+                    android:text=":  " />
+
+                <TextView
+                    android:id="@+id/tanggalpesan"
+                    style="@style/FormatText.Isi"
+                    android:hint="Tanggal Kunjungan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:orientation="vertical">
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="250dp"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center">
+                </CalendarView>
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/FormatText.Judul"
+                    android:text="Jam Datang " />
+
+                <TextView
+                    style="@style/FormatText.Isi"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:text=":  " />
+
+                <EditText
+                    style="@style/FormatText.Isi"
+                    android:layout_marginLeft="-100dp"
+                    android:hint="11.00" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/FormatText.Judul"
+                    android:text="Jam Selesai" />
+
+                <TextView
+                    style="@style/FormatText.Isi"
+                    android:text=":  " />
+
+                <EditText
+                    style="@style/FormatText.Isi"
+                    android:layout_marginLeft="-100dp"
+                    android:hint="15.00" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/FormatText.Judul"
+                    android:text="Jumlah Rombongan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":  "
+                    android:textColor="@color/colorDark" />
+
+                <EditText
+                    style="@style/FormatText.Isi"
+                    android:layout_marginLeft="-7dp"
+                    android:hint="" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" pengunjung"
+                    android:textColor="@color/colorDark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/FormatText.Judul"
+                    android:text="Scan Data pengunjung" />
+
+                <ImageView
+                    style="@style/FormatText.Isi"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_book" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/pesantempat_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rectangle_primary_color"/>
+    </LinearLayout>
+</ScrollView>
