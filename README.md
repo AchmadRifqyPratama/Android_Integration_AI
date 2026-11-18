@@ -47,4 +47,4 @@ cd "MBKM Wearable AI/HAR_LSTM_AndroidSensor"
 
 ## Data
 
-`HAR_LSTM_App/app/src/main/python/WESAD_S3.csv` is a recording of subject S3 from the [WESAD](https://archive.ics.uci.edu/dataset/465/wesad+wearable+stress+and+affect+detection) dataset, used as offline input for the HR estimation.
+`HAR_LSTM_App/app/src/main/python/WESAD_S3.csv` (no header; 5 columns read as PPG1, PPG2, ACC X, ACC Y, ACC Z) is the offline input for the HR estimation. As the file name suggests, it is derived from subject S3 of the [WESAD](https://archive.ics.uci.edu/dataset/465/wesad+wearable+stress+and+affect+detection) dataset.
